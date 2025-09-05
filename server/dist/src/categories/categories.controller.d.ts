@@ -5,17 +5,17 @@ export declare class CategoriesController {
     private readonly categoriesService;
     constructor(categoriesService: CategoriesService);
     create(createCategoryDto: CreateCategoryDto): Promise<{
-        title: string;
         createdAt: Date;
         updatedAt: Date;
         id: number;
+        title: string;
     }>;
     findAll(): Promise<({
         products: {
-            title: string;
             createdAt: Date;
             updatedAt: Date;
             id: number;
+            title: string;
             cost: number;
             img: string;
         }[];
@@ -23,23 +23,23 @@ export declare class CategoriesController {
             createdAt: Date;
             updatedAt: Date;
             id: number;
+            quantity: number;
             categoryId: number;
             productId: number;
             orderId: number;
-            quantity: number;
         }[];
     } & {
-        title: string;
         createdAt: Date;
         updatedAt: Date;
         id: number;
+        title: string;
     })[]>;
     findOne(id: string): Promise<{
         products: {
-            title: string;
             createdAt: Date;
             updatedAt: Date;
             id: number;
+            title: string;
             cost: number;
             img: string;
         }[];
@@ -47,27 +47,27 @@ export declare class CategoriesController {
             createdAt: Date;
             updatedAt: Date;
             id: number;
+            quantity: number;
             categoryId: number;
             productId: number;
             orderId: number;
-            quantity: number;
         }[];
     } & {
-        title: string;
         createdAt: Date;
         updatedAt: Date;
         id: number;
+        title: string;
     }>;
     update(id: number, updateCategoryDto: UpdateCategoryDto): Promise<{
-        title: string;
         createdAt: Date;
         updatedAt: Date;
         id: number;
+        title: string;
     }>;
     remove(id: string): Promise<{
-        title: string;
         createdAt: Date;
         updatedAt: Date;
         id: number;
+        title: string;
     }>;
 }
